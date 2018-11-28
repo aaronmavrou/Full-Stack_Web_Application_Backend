@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/products', product);
 
-app.use(express.static('../lab5/src/app'));
+app.use(express.static('../frontend/src/app'));
 
 let port = 8081;
 app.listen(port, () => {
