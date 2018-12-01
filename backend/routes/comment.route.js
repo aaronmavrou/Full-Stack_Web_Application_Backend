@@ -15,7 +15,7 @@ router.get('/getall', comment_controller.comment_getall);
 
 router.get('/oneItem/:id', comment_controller.comment_details);
 
-router.put('/updateQuantity/:id', comment_controller.comment_updateQuantity);
+router.put('/updateComment/:id', comment_controller.comment_updateQuantity);
 
 router.put('/updateTaxRate/:id', comment_controller.comment_updateTaxRate);
 

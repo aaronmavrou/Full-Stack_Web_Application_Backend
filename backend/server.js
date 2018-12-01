@@ -8,6 +8,7 @@ const comment = require('./routes/comment.route');
 const collection = require('./routes/collection.route');
 const item = require('./routes/item.route');
 const manager = require('./routes/manager.route');
+const dmca = require('./routes/dmca.route');
 
 
 const app = express();
@@ -29,6 +30,7 @@ app.use('/comments', comment);
 app.use('/collections', collection);
 app.use('/items', item);
 app.use('/managers', manager);
+app.use('/dmcas', dmca);
 
 app.use(express.static('../lab5/src/app'));
 
