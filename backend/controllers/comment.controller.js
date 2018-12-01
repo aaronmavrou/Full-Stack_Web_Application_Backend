@@ -12,7 +12,8 @@ exports.comment_create = function (req, res) {
             name: req.body.name,
             theProduct: req.body.theProduct,
             rating: req.body.rating,
-            comment: req.body.comment
+            comment: req.body.comment,
+            thevis: req.body.thevis
         }
     );
 
