@@ -5,6 +5,10 @@ const bodyParser = require('body-parser');
 
 const product = require('./routes/product.route'); // Imports routes for the products
 const comment = require('./routes/comment.route');
+const collection = require('./routes/collection.route');
+const item = require('./routes/item.route');
+
+
 const app = express();
 
 // Set up mongoose connection
@@ -21,6 +25,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/products', product);
 app.use('/comments', comment);
+app.use('/collections', collection);
+app.use('/items', item);
 
 app.use(express.static('../lab5/src/app'));
 

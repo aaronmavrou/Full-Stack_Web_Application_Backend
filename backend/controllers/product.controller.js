@@ -34,6 +34,7 @@ exports.product_details = function (req, res) {
 };
 
 exports.product_updateQuantity = function (req, res) {
+    console.log("we got here    " + req.params.id);
     Product.findByIdAndUpdate(req.params.id, {$set: req.body}, function (err, product) {
         if (err) return next(err);
         res.json({message:'Product udpated.'});

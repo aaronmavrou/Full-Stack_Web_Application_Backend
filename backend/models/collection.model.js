@@ -3,8 +3,9 @@ const Schema = mongoose.Schema;
 
 let CollectionSchema = new Schema({
     name: {type: String, required: true, max: 100},
-    rating: {type: Number, required: true},
-    comment: {type: String, required: false},
+    theDescription: {type: String, required: true},
+    theVisibility: {type: Boolean, required: true},
+    ownerName: {type: String, required: true},
 });
 
 module.exports = mongoose.model('Collection', CollectionSchema);
