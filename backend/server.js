@@ -9,6 +9,7 @@ const collection = require('./routes/collection.route');
 const item = require('./routes/item.route');
 const manager = require('./routes/manager.route');
 const dmca = require('./routes/dmca.route');
+const user = require('./routes/user.route');
 
 
 const app = express();
@@ -31,6 +32,7 @@ app.use('/collections', collection);
 app.use('/items', item);
 app.use('/managers', manager);
 app.use('/dmcas', dmca);
+app.use('/users', user);
 
 app.use(express.static('../lab5/src/app'));
 

@@ -19,4 +19,4 @@ router.put('/updateDmca/:id', dmca_controller.dmca_updateQuantity);
 
 router.put('/updateTaxRate/:id', dmca_controller.dmca_updateTaxRate);
 
-router.delete('/delete/:id', dmca_controller.dmca_delete);
+router.delete('/deleteDmca/:id', dmca_controller.dmca_delete);
