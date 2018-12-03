@@ -15,6 +15,6 @@ router.get('/getall', cart_controller.cart_getall);
 
 router.get('/oneItem/:id', cart_controller.cart_details);
 
-router.put('/updateQuantity/:id', cart_controller.cart_updateQuantity);
+router.put('/updateCart/:id', cart_controller.cart_updateQuantity);
 
 router.delete('/delete/:id', cart_controller.cart_delete);
